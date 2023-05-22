@@ -42,7 +42,7 @@ pygame.display.set_caption("Main Game")
 
 # Backgrounds
 pygame.display.set_caption("Tower defense")
-background_image = pygame.image.load("assets/img/background_inicial.jpeg")
+background_image = pygame.image.load("assets/img/inicio.png")
 game_background_image = pygame.image.load('assets/img/game_background.jpeg')
 background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
 game_background_image = pygame.transform.scale(game_background_image, (WIDTH, HEIGHT))
