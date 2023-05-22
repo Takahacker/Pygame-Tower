@@ -177,7 +177,7 @@ ball_index = 0
 Bola_visivel = True
 # --------------------------------- Classe Torre --------------------------------------
 
-class Tower1:
+class Tower:
     def __init__(self, image, damage, range, price):
         self.image = image
         self.damage = damage
@@ -191,38 +191,12 @@ class Tower1:
         if self.position:
             screen.blit(self.image, self.position)
 
-class Tower2:
-    def __init__(self, image, damage, range, price):
-        self.image = image
-        self.damage = damage
-        self.range = range
-        self.position = None
 
-    def set_position(self, position):
-        self.position = position
-
-    def draw(self, screen):
-        if self.position:
-            screen.blit(self.image, self.position)
-
-class Tower3:
-    def __init__(self, image, damage, range, price):
-        self.image = image
-        self.damage = damage
-        self.range = range
-        self.position = None
-
-    def set_position(self, position):
-        self.position = position
-
-    def draw(self, screen):
-        if self.position:
-            screen.blit(self.image, self.position)
 # --------------------------------- Cria Torres --------------------------------------
 
-tower1 = Tower1(tower_image, 10, 100, 50)
-tower2 = Tower2(tower_image, 20, 100, 100)
-tower3 = Tower3(tower_image, 20, 200, 150)
+tower1 = Tower(tower_image, 10, 100, 50)
+tower2 = Tower(tower_image, 20, 100, 100)
+tower3 = Tower(tower_image, 20, 200, 150)
 
 # ---------------------------------Inicia o Loop Principal --------------------------------------
 running = True
