@@ -10,11 +10,24 @@ WIDTH = 1500
 HEIGHT = 900
 FPS = 60
 TAMANHO_QUADRADO = 70
-GRID_COLOR = (255, 255, 255)
-PATH_COLOR = (111, 132, 50)
 INIMIGO_WIDTH = 38
 INIMIGO_HEIGHT = 50
 Raio_bola = 10
+
+# --------------------------------- Cores ------------------------------------------
+GRID_COLOR = (255, 255, 255)
+PATH_COLOR = (111, 132, 50)
+vermelho = (255, 0, 0)
+verde = (0, 255, 0)
+azul = (0, 0, 255)
+preto = (0, 0, 0)
+branco = (255, 255, 255)
+azul_ceu = (135,206,235)
+ciano = (0,255,255)
+roxo = (128,0,128)
+laranja = (255,165,0)
+amarelo = (255,255,0)
+
 
 #--------------------------------- Gera tela inicial ------------------------------------
 
@@ -22,8 +35,8 @@ Tela_inicial = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Ibis defender")
 
 font = pygame.font.Font(None, 60)
-title_text = font.render("Ibis Defender", True, (255, 255, 255))
-start_text = font.render("Press SPACE to Start", True, (255, 255, 255))
+title_text = font.render("Ibis Defender", True, branco)
+start_text = font.render("Press SPACE to Start", True, branco)
 title_text_rect = title_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 50))
 start_text_rect = start_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 50))
 
@@ -42,7 +55,7 @@ pygame.display.set_caption("Main Game")
 
 # Backgrounds
 pygame.display.set_caption("Tower defense")
-background_image = pygame.image.load("assets/img/inicio.png")
+background_image = pygame.image.load("assets/img/background_inicial.jpeg")
 game_background_image = pygame.image.load('assets/img/game_background.jpeg')
 background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
 game_background_image = pygame.transform.scale(game_background_image, (WIDTH, HEIGHT))
@@ -156,9 +169,9 @@ class Ball:
 clock = pygame.time.Clock()
 
 # Cria Inimigos
-red_ball = Ball((255, 0, 0), 6.0, 10, 100)
-blue_ball = Ball((0, 0, 255), 5.0, 20, 150)
-green_ball = Ball((0, 255, 0), 1.5, 30, 200)
+red_ball = Ball(vermelho, 6.0, 10, 100)
+blue_ball = Ball(azul, 5.0, 20, 150)
+green_ball = Ball(verde, 1.5, 30, 200)
 
 # Ball varia
 ball = red_ball
