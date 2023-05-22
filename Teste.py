@@ -1,8 +1,7 @@
+# ------------------Importação e Inicialização de bibliotecas --------------------------
 import pygame
 import random
 import sys
-
-# ---------------------------------Inicialização -------------------------------
 pygame.init()
 pygame.mixer.init()
 
@@ -63,7 +62,6 @@ class Tower(pygame.sprite.Sprite):
         for balloon in balloons:
             if pygame.sprite.collide_circle(self, balloon):
                 pass
-
 
 
 running = True
