@@ -5,14 +5,27 @@ import sys
 pygame.init()
 pygame.mixer.init()
 
+#define cores
+vermelho = (255, 0, 0)
+verde = (0, 255, 0)
+azul = (0, 0, 255)
+preto = (0, 0, 0)
+branco = (255, 255, 255)
+azul_ceu = (135,206,235)
+ciano = (0,255,255)
+roxo = (128,0,128)
+laranja = (255,165,0)
+amarelo = (255,255,0)
+
+
 # --------------------------------- Parâmetros ----------------------------
 
 WIDTH = 800
 HEIGHT = 600
 FPS = 60
 TAMANHO_QUADRADO= 50
-GRID_COLOR = (255, 255, 255)
-PATH_COLOR = (0, 255, 0)
+GRID_COLOR = branco
+PATH_COLOR = verde
 Raio_bola = 10
 
 #--------------------------------- Gera tela inicial ----------------------------
@@ -20,8 +33,8 @@ Tela_inicial = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Tower defense")
 
 font = pygame.font.Font(None, 60)
-title_text = font.render("Tower Defense", True, (255, 255, 255))
-start_text = font.render("Press SPACE to Start", True, (255, 255, 255))
+title_text = font.render("Tower Defense", True, branco)
+start_text = font.render("Press SPACE to Start", True, branco)
 title_text_rect = title_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 50))
 start_text_rect = start_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 50))
 
@@ -115,9 +128,9 @@ class Ball:
 clock = pygame.time.Clock()
 
 # Cria Inimigos
-red_ball = Ball((255, 0, 0), 6.0)
-blue_ball = Ball((0, 0, 255), 5.0)
-green_ball = Ball((0, 255, 0), 1.5)
+red_ball = Ball(vermelho, 6.0)
+blue_ball = Ball(azul, 5.0)
+green_ball = Ball(verde, 1.5)
 
 # Ball varia
 ball = red_ball
