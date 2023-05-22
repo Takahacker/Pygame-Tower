@@ -194,7 +194,7 @@ class Tower:
 
 # --------------------------------- Cria Torres --------------------------------------
 
-tower1 = Tower(tower_image, 10, 100, 50)
+tower1 = Tower("assets\img\Lionel-Messi.png", 10, 100, 50)
 tower2 = Tower(tower_image, 20, 100, 100)
 tower3 = Tower(tower_image, 20, 200, 150)
 
