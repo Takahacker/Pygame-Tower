@@ -40,14 +40,28 @@ pygame.display.set_caption("Main Game")
 
 #--------------------------------- Inicia Assets ---------------------------------
 
-pygame.display.set_caption("Ibis Defender")
+# Backgrounds
+pygame.display.set_caption("Tower defense")
 background_image = pygame.image.load("assets/img/background_inicial.jpeg")
 game_background_image = pygame.image.load('assets/img/game_background.jpeg')
 background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
 game_background_image = pygame.transform.scale(game_background_image, (WIDTH, HEIGHT))
 
+# Inimigos
 Amongus = pygame.image.load("assets/img/Amongus.png").convert_alpha()
 Amongus = pygame.transform.scale(Amongus,(INIMIGO_WIDTH,INIMIGO_HEIGHT))
+
+
+# Torres
+
+tower_image = pygame.image.load("assets/img/Lionel-Messi.png").convert_alpha()
+tower_image = pygame.transform.scale(tower_image, (TAMANHO_QUADRADO, TAMANHO_QUADRADO))
+
+
+tower_icon_image = pygame.image.load("assets/img/Lionel-Messi.png").convert_alpha()
+tower_icon_image = pygame.transform.scale(tower_icon_image, (50, 50))
+
+
 
 #--------------------------------- Inicia Estruturas de dados ---------------------------------
 
@@ -155,6 +169,24 @@ ball_position = (
 )
 ball_index = 0
 Bola_visivel = True
+# --------------------------------- Classe Torre --------------------------------------
+
+class Tower:
+    def __init__(self, image, damage, range):
+        self.image = image
+        self.damage = damage
+        self.range = range
+        self.position = None
+
+    def set_position(self, position):
+        self.position = position
+
+    def draw(self, screen):
+        if self.position:
+            screen.blit(self.image, self.position)
+
+# Create tower
+tower = Tower(tower_image, 10, 100)
 
 # ---------------------------------Inicia o Loop Principal --------------------------------------
 running = True
