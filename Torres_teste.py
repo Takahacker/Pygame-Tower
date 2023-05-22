@@ -1,3 +1,8 @@
+# Inicialização
+import pygame
+import random
+import sys
+
 # Tower Types
 TOWER_RED = "red"
 TOWER_BLUE = "blue"
