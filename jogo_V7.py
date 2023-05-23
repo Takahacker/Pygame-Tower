@@ -232,8 +232,6 @@ while running:
     
     elif tutorial:
         Tela_inicial.blit(background_tutorial, (0, 0))
-        Tela_inicial.blit(title_text, title_text_rect)
-        Tela_inicial.blit(start_text, start_text_rect)
         pygame.display.flip()
     # Inicia a tela principal 
 
