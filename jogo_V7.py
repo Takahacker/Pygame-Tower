@@ -235,10 +235,8 @@ while running:
     
     elif tutorial:
         Tela_inicial.blit(background_tutorial, (0, 0))
-        pygame.display.flip()
-        som_fundo = pygame.mixer.Sound("assets/img/sons/davi.mp3")
-        som_fundo.play()
-        pygame.time.wait(int(som_fundo.get_length() * 1000))
+        pygame.display.flip()        
+
     # Inicia a tela principal 
 
     else:
