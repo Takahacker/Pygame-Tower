@@ -68,6 +68,9 @@ tower_image = pygame.transform.scale(tower_image, (TAMANHO_QUADRADO, TAMANHO_QUA
 tower_icon_image = pygame.image.load("assets/img/Lionel-Messi.png").convert_alpha()
 tower_icon_image = pygame.transform.scale(tower_icon_image, (50, 50))
 
+#sons
+
+
 
 
 #--------------------------------- Inicia Estruturas de dados ---------------------------------
@@ -233,6 +236,9 @@ while running:
     elif tutorial:
         Tela_inicial.blit(background_tutorial, (0, 0))
         pygame.display.flip()
+        som_fundo = pygame.mixer.Sound("assets/img/sons/davi.mp3")
+        som_fundo.play()
+        pygame.time.wait(int(som_fundo.get_length() * 1000))
     # Inicia a tela principal 
 
     else:
