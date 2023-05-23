@@ -50,7 +50,7 @@ pygame.display.set_caption("tutorial Game")
 pygame.display.set_caption("Tower defense")
 background_image = pygame.image.load("assets/img/inicio.png")
 game_background_image = pygame.image.load('assets/img/game_background.jpeg')
-background_tutorial = pygame.image.load("assets/img/inicio.png")
+background_tutorial = pygame.image.load("assets/img/background_inicial.jpeg")
 background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
 game_background_image = pygame.transform.scale(game_background_image, (WIDTH, HEIGHT))
 
@@ -201,6 +201,7 @@ tower3 = Tower(tower_image, 10, 100)
 running = True
 Jogo_iniciado = False
 tutorial = False
+tela_preta = False
 
 # Indicador de vida do Jogador
 Player_life = 100
@@ -216,15 +217,24 @@ while running:
             sys.exit()
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
-                tutorial = True
-
-                if true :
+                if tutorial and tela_preta:
+                    tutorial = False
+                    tela_preta = False
                     Jogo_iniciado = True
-                
-    # Tela inicial
+                else:
+                    tutorial = True
+                    tela_preta = True
 
+                    
+    #tela tutorial
     if not Jogo_iniciado:
         Tela_inicial.blit(background_image, (0, 0))
+        Tela_inicial.blit(title_text, title_text_rect)
+        Tela_inicial.blit(start_text, start_text_rect)
+        pygame.display.flip()
+    
+    elif not tutorial:
+        Tela_inicial.blit(background_tutorial, (0, 0))
         Tela_inicial.blit(title_text, title_text_rect)
         Tela_inicial.blit(start_text, start_text_rect)
         pygame.display.flip()
@@ -232,6 +242,7 @@ while running:
     # Inicia a tela principal 
 
     else:
+        print('jogo iniciado')
         game_screen.blit(game_background_image, (0, 0))
 
         if ball_index < len(Coordenadas_caminho) - 1:
