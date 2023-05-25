@@ -69,6 +69,8 @@ tower_icon_image = pygame.image.load("assets/img/Lionel-Messi.png").convert_alph
 tower_icon_image = pygame.transform.scale(tower_icon_image, (50, 50))
 
 #sons
+pygame.mixer.init()
+pygame.mixer.music.load("assets/img/sons/musica.mp3")
 
 
 
@@ -208,6 +210,9 @@ tutorial = False
 # Indicador de vida do Jogador
 Player_life = 100
 
+#som
+pygame.mixer.music.play(-1) # O argumento -1 faz com que a música seja reproduzida em um loop infinito
+
 # Game loop
 while running:
     clock.tick(FPS)
@@ -226,6 +231,8 @@ while running:
                 else:
                     tutorial = False
                     Jogo_iniciado = True
+                    pygame.mixer.music.stop()
+
 
     if not Jogo_iniciado:
         Tela_inicial.blit(background_image, (0, 0))
