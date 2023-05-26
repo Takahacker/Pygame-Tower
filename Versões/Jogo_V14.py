@@ -99,7 +99,7 @@ def get_angle(a,b):
  # --------------------------------- Classe Mapa ----------------------------
 class Map:
     def __init__(self):
-        self.map = 'monkey lane'
+        self.map = 'Campinho'
         self.loadmap()
 
     def loadmap(self):
