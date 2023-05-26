@@ -4,3 +4,18 @@ A mecanica principal do jogo envolve a alocação de recursos, no nosso caso din
 Os inimigos são divididos em diferentes tipos, tendo diferentes velocidades, resistencias a tiros e tamanhos. 
 A dificuldade do jogo aumenta com o passar das rodadas, seja colocando inimigos mais fortes ou aumentando a quantidade de inimigos.
 Quando um inimigo chega ao objetivo, o jogador perde pontos de vida, caso o numero de pontos de vida chegue a 0 (zero), o jogador irá perder a partida. Caso o jogador termine todas as rodadas antes de sua pontuação de vida chegar a 0 (zero), ele irá vencer a partida.
+
+
+////////
+
+referencias/Creditos para arrumar dps
+
+Musicas - 
+1 - https://www.youtube.com/watch?v=aiSOzVbFp_s audio utilizado como base e posteriormente editado
+2 - https://www.youtube.com/watch?v=cUAG7S2-2Ys Musica utilizada como musica de fundo disponibilizado pelo Jogo Bomba Patch em 2012
+
+
+Imagens usadas como referencia e base - 
+
+1 - Imagens disponibilizadas em redes sociais pelo Íbis Sport Club
+2 - 
