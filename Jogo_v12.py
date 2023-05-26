@@ -2,8 +2,8 @@
 import pygame, sys, os, time, math
 pygame.init()
 # --------------------------------- Parâmetros ----------------------------
-WIDTH = 1400
-HEIGHT = 1000
+WIDTH = 800
+HEIGHT = 600
 INIMIGO_HEIGHT = 50
 INIMIGO_WIDTH = 38
 TORRE_HEIGHT = 200
@@ -408,6 +408,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# pastas fazendo a parte.
