@@ -28,5 +28,3 @@ def victory():
             
         victory_screen.blit(victory_background, (0, 0))
         pygame.display.flip()
-
-victory()
