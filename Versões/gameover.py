@@ -7,7 +7,7 @@ def gameover():
     os.environ['SDL_VIDEO_CENTERED'] = '1'
     clock = pygame.time.Clock()
     gameover_screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    gameover_background = pygame.image.load("assets/img/inicio.png")
+    gameover_background = pygame.image.load("assets/img/gameoverfim.png")
     gameover_background = pygame.transform.scale(gameover_background, (WIDTH, HEIGHT))
 
     perdeu = True
@@ -20,9 +20,6 @@ def gameover():
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    tela_inicial()
-                    main()
+                    pygame.quit
         gameover_screen.blit(gameover_background, (0, 0))
         pygame.display.flip()
-
-gameover()
