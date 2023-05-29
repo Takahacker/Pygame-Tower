@@ -13,6 +13,8 @@ referencias/Creditos para arrumar dps
 Musicas - 
 1 - https://www.youtube.com/watch?v=aiSOzVbFp_s audio utilizado como base e posteriormente editado
 2 - https://www.youtube.com/watch?v=cUAG7S2-2Ys Musica utilizada como musica de fundo disponibilizado pelo Jogo Bomba Patch em 2012
+3 - https://www.youtube.com/watch?v=zB6Mw7J7qZA Musica de fundo na tela de jogo
+
 
 
 Imagens usadas como referencia e base - 
