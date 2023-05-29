@@ -129,7 +129,7 @@ class inimigo:
     layers = [ # Nome Vida Speed Recompensa
         ('red',      1, 1.0, 0),
         ('darkblue', 3, 1.5, 0),
-        ('green',    10, 2.0, 0),
+        ('green',    6, 2.0, 0),
         ('yellow',   5, 3.5, 0),
         ('cinza', 30,1.0,0)
         ]
@@ -214,8 +214,8 @@ class createTower(Tower):
 class Icon:
     towers = { # Custo Cadencia_de_Tiro Alcance Dano
         'Gustavo'     : [ 200, 1.0, 100, 1],
-        'Belarmino'   : [ 350, 2.5, 170, 3],
-        'Husky'       : [ 500, 7, 400, 30],
+        'Belarmino'   : [ 350, 2.0, 170, 4],
+        'Husky'       : [ 500, 7,   300, 30],
 }
 
     def __init__(self,tower):
