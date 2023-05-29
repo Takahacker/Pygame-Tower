@@ -211,9 +211,9 @@ class createTower(Tower):
 # --------------------------------- Classe de ícone no Menu do Jogador ----------------------------
 class Icon:
     towers = { # Custo Cadencia_de_Tiro Alcance Dano
-        'Gustavo'     : [ 200, 0.5, 100, 1],
-        'Belarmino'   : [ 350, 1.0, 170, 3],
-        'Husky'       : [ 500, 5, 400, 30],
+        'Gustavo'     : [ 200, 1.0, 100, 1],
+        'Belarmino'   : [ 350, 2.5, 170, 3],
+        'Husky'       : [ 500, 7, 400, 30],
 }
 
     def __init__(self,tower):
