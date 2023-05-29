@@ -320,7 +320,7 @@ def Carrega_eventos(selected,wave,speed):
                 if wave<=len(mapvar.waves): Sender(wave)
                 else: print('Fim dos Rounds')
 
-            if event.key == pygame.K_k and selected in torres_lista: player.money+=int(selected.cost*0.9); torres_lista.remove(selected); selected = None
+            if event.key == pygame.K_k and selected in torres_lista: player.money+=int(selected.cost*0.7); torres_lista.remove(selected); selected = None
             if event.key == pygame.K_w and speed<10: speed+=1
             if event.key == pygame.K_s and speed>1: speed-=1
     return selected,wave,speed
