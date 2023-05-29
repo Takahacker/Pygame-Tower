@@ -24,15 +24,15 @@ sender_lista = []
  
 # --------------------------------- Cores ----------------------------
 cores = {
-    'yellow':   (255,255,0),
-    'lime':     (0,255,0),
-    'darkblue': (0,0,255),
-    'aqua':     (0,255,255),
+    'amarelo':   (255,255,0),
+    'verde_limao':     (0,255,0),
+    'azul_escuro': (0,0,255),
+    'verde_agua':     (0,255,255),
     'magenta':  (255,0,255),
-    'purple':   (128,0,128),
-    'green':    (97,144,0),
-    'purple':   (197,125,190),
-    'brown':    (110,73,32),
+    'roxo':   (128,0,128),
+    'verde':    (97,144,0),
+    'roxo':   (197,125,190),
+    'marrom':    (110,73,32),
     'cinza': (37,55,47)
     }
 
@@ -82,7 +82,7 @@ def loadImages():
 # --------------------------------- Inimigo ----------------------------
     Inimigo = carrega_imagem('assets/img/Bola.png')
     Inimigo = pygame.transform.scale(Inimigo,(INIMIGO_WIDTH,INIMIGO_HEIGHT))
-    inimigoImageArray['red'] = Inimigo
+    inimigoImageArray['vermelho'] = Inimigo
     WIDTH,HEIGHT = Inimigo.get_size()
     
     for name in cores:
@@ -127,10 +127,10 @@ mapvar = Map()
  # --------------------------------- Classe Inimigo ----------------------------
 class inimigo:
     layers = [ # Nome Vida Speed Recompensa
-        ('red',      1, 1.0, 0),
-        ('darkblue', 3, 1.5, 0),
-        ('green',    6, 2.0, 0),
-        ('yellow',   5, 3.5, 0),
+        ('vermelho',      1, 1.0, 0),
+        ('azul_escuro', 3, 1.5, 0),
+        ('verde',    6, 2.0, 0),
+        ('amarelo',   5, 3.5, 0),
         ('cinza', 30,1.0,0)
         ]
 
@@ -333,7 +333,7 @@ def Carrega_eventos(selected,wave,speed):
 perdeu = False
 ganhou = False
 def main():
-    os.environ['SDL_VIDEO_CENTERED'] = '1'
+    os.environ['SDL_VIDEO_CENTEvermelho'] = '1'
     pygame.display.set_caption('Ibis Defender')
     screen = pygame.display.set_mode((WIDTH,HEIGHT))
     clock = pygame.time.Clock()
