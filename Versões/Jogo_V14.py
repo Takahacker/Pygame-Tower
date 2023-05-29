@@ -37,7 +37,7 @@ cores = {
 # --------------------------------- Sons ----------------------------
 
 # --------------- Música
-def toca_musica(file, volume=1, loop=-1):
+def toca_musica(file, volume=0.7, loop=-1):
     pygame.mixer.music.load(file)
     pygame.mixer.music.set_volume(volume)
     pygame.mixer.music.play(loop)
@@ -211,9 +211,9 @@ class createTower(Tower):
 # --------------------------------- Classe de ícone no Menu do Jogador ----------------------------
 class Icon:
     towers = { # Custo Cadencia_de_Tiro Alcance Dano
-        'Gustavo'     : [ 215, 1.0, 100, 1],
-        'Belarmino'   : [ 390, 1.0, 100, 1],
-        'Husky'       : [ 500, 5, 400, 30],
+        'Gustavo'     : [ 200, 1.0, 100, 1],
+        'Belarmino'   : [ 350, 2.5, 170, 3],
+        'Husky'       : [ 500, 7, 400, 30],
 }
 
     def __init__(self,tower):
@@ -320,7 +320,7 @@ def Carrega_eventos(selected,wave,speed):
                 if wave<=len(mapvar.waves): Sender(wave)
                 else: print('Fim dos Rounds')
 
-            if event.key == pygame.K_k and selected in torres_lista: player.money+=int(selected.cost*0.9); torres_lista.remove(selected); selected = None
+            if event.key == pygame.K_k and selected in torres_lista: player.money+=int(selected.cost*0.7); torres_lista.remove(selected); selected = None
             if event.key == pygame.K_w and speed<10: speed+=1
             if event.key == pygame.K_s and speed>1: speed-=1
     return selected,wave,speed
