@@ -30,7 +30,9 @@ cores = {
     'purple':   (128,0,128),
     'green':    (97,144,0),
     'purple':   (197,125,190),
-    'brown':    (110,73,32),}
+    'brown':    (110,73,32),
+    'cinza': (37,55,47)
+    }
 
 # --------------------------------- Sons ----------------------------
 
@@ -124,9 +126,11 @@ mapvar = Map()
 class inimigo:
     layers = [ # Nome Vida Speed Recompensa
         ('red',      1, 1.0, 0),
-        ('darkblue', 1, 1.0, 0),
-        ('green',    1, 1.2, 0),
-        ('yellow',   1, 2.0, 0),]
+        ('darkblue', 3, 1.5, 0),
+        ('green',    10, 2.0, 0),
+        ('yellow',   5, 3.5, 0),
+        ('cinza', 30,1.0,0)
+        ]
 
     def __init__(self,layer):
         self.layer = layer
@@ -209,7 +213,7 @@ class Icon:
     towers = { # Custo Cadencia_de_Tiro Alcance Dano
         'Gustavo'     : [ 215, 1.0, 100, 1],
         'Belarmino'   : [ 390, 1.0, 100, 1],
-        'Husky'       : [ 430, 1.0, 200, 1],
+        'Husky'       : [ 500, 5, 400, 30],
 }
 
     def __init__(self,tower):
@@ -387,7 +391,7 @@ def main():
             
         dispText(screen,wave)
         
-        if player.health == 0:
+        if player.health <= 0:
             jogando = False
             pygame.quit
 
