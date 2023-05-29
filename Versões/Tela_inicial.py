@@ -26,27 +26,39 @@ def tela_inicial():
 
     def para_musica():
         pygame.mixer.music.stop()
-
     inicio = True
-    toca_musica('assets/snd/Musicas/musica.mp3')
+    Jogo_iniciado = False
+    tutorial = False
+
+# Game loop
     while inicio:
         clock.tick(60)
+        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                inicio = False  # Sair do loop principal
+                pygame.quit()
+                sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    Tela_inicial.blit(tutorial_tela, (0, 0))
-                    pygame.display.flip()
-                    pygame.time.wait(1000)  # Aguardar 1 segundo
-                    inicio = False  # Sair do loop principal
-        Tela_inicial.blit(background_image, (0, 0))
-        Tela_inicial.blit(title_text, title_text_rect)
-        Tela_inicial.blit(start_text, start_text_rect)
-        pygame.display.flip()
+                    if not Jogo_iniciado:
+                        if not tutorial:  # Verifica se o tutorial não está ativo
+                            tutorial = True
+                        else:
+                            Jogo_iniciado = True
+                    else:
+                        tutorial = False
+                        Jogo_iniciado = True
+                        pygame.mixer.music.stop()
 
-    para_musica()
-    pygame.quit()
-    sys.exit()
-
-tela_inicial()
+        if not Jogo_iniciado:
+            Tela_inicial.blit(background_image, (0, 0))
+            Tela_inicial.blit(title_text, title_text_rect)
+            Tela_inicial.blit(start_text, start_text_rect)
+            pygame.display.flip()
+        
+        elif tutorial:
+            Tela_inicial.blit(tutorial_tela, (0, 0))
+            pygame.display.flip() 
+        else:
+            inicio = False
+             
