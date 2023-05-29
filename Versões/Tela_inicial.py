@@ -51,7 +51,6 @@ def tela_inicial():
                         Jogo_iniciado = True
                         inicio = False
                         
-        
         if not Jogo_iniciado:
             Tela_inicial.blit(background_image, (0, 0))
             Tela_inicial.blit(title_text, title_text_rect)
@@ -64,3 +63,4 @@ def tela_inicial():
         else:
             para_musica()
             inicio = False
+

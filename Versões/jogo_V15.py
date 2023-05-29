@@ -397,15 +397,12 @@ def main():
         
         if player.health <= 0:
             jogando = False
+            para_musica()
             gameover()
-
         if wave > 14:
             jogando = False
+            para_musica()
             victory()
+            
         
         pygame.display.flip()
-
-
-
-if __name__ == '__main__':
-    main()
