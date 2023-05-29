@@ -37,7 +37,7 @@ cores = {
 # --------------------------------- Sons ----------------------------
 
 # --------------- Música
-def toca_musica(file, volume=1, loop=-1):
+def toca_musica(file, volume=0.7, loop=-1):
     pygame.mixer.music.load(file)
     pygame.mixer.music.set_volume(volume)
     pygame.mixer.music.play(loop)
@@ -211,8 +211,8 @@ class createTower(Tower):
 # --------------------------------- Classe de ícone no Menu do Jogador ----------------------------
 class Icon:
     towers = { # Custo Cadencia_de_Tiro Alcance Dano
-        'Gustavo'     : [ 215, 1.0, 100, 1],
-        'Belarmino'   : [ 390, 1.0, 100, 1],
+        'Gustavo'     : [ 200, 0.5, 100, 1],
+        'Belarmino'   : [ 350, 1.0, 170, 3],
         'Husky'       : [ 500, 5, 400, 30],
 }
 
