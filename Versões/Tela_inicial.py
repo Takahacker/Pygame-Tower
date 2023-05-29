@@ -49,6 +49,7 @@ def tela_inicial():
                     else:
                         tutorial = False
                         Jogo_iniciado = True
+                        inicio = False
                         
         
         if not Jogo_iniciado:
@@ -63,4 +64,3 @@ def tela_inicial():
         else:
             para_musica()
             inicio = False
-             
