@@ -22,3 +22,16 @@ Imagens usadas como referencia e base -
 1 - Imagens disponibilizadas em redes sociais pelo Íbis Sport Club
 2 - https://br.pinterest.com/asafeleonardo/estadio-futebol/
 
+
+
+------------------Inspirações--------------------
+O Ibis defender foi desenvolvido com base em várias fontes de inspiração, incluindo:
+
+1-Bloons TD Battles
+    Bloons TD Battles é um jogo de tower defense altamente popular, desenvolvido pela Ninja Kiwi. Ele combina elementos estratégicos e de defesa em um ambiente multiplayer competitivo. Nossa equipe se inspirou na mecânica de jogo viciante e na jogabilidade emocionante do Bloons TD Battles ao projetar o Tower Defense de Futebol.
+
+-------------- Execução do Jogo -----------------
+Após descompactar a pasta dos arquivos do jogo é possível executá-lo rodando o código "Executável.py" presente na pasta Versões
+
+-------------- Vídeo Youtube -------------------
+
