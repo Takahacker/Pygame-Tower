@@ -21,6 +21,8 @@ Imagens usadas como referencia e base -
 
 1 - Imagens disponibilizadas em redes sociais pelo Íbis Sport Club
 2 - https://br.pinterest.com/asafeleonardo/estadio-futebol/
+3 - Imagem usada como base do site https://ge.globo.com/
+
 
 
 
