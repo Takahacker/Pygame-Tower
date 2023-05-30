@@ -7,7 +7,7 @@ def victory():
     os.environ['SDL_VIDEO_CENTERED'] = '1'
     clock = pygame.time.Clock()
     victory_screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    victory_background = pygame.image.load("assets/img/inicio.png")
+    victory_background = pygame.image.load("assets/img/telavitoria.png")
     victory_background = pygame.transform.scale(victory_background, (WIDTH, HEIGHT))
 
     perdeu = True
