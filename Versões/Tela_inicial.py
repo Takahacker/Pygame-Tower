@@ -14,7 +14,7 @@ def tela_inicial():
     start_text = font.render("Press SPACE to Start", True, (255, 255, 255))
     title_text_rect = title_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 50))
     start_text_rect = start_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 50))
-    tutorial_tela = pygame.image.load('assets/img/tutorialfoto.png')
+    tutorial_tela = pygame.image.load('assets/img/tutorialatual.png')
     tutorial_tela = pygame.transform.scale(tutorial_tela, (WIDTH, HEIGHT))
     background_image = pygame.image.load("assets/img/inicio.png")
     background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))

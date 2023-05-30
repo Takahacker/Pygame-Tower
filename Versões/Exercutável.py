@@ -1,5 +1,5 @@
 import pygame, sys, os, time, math
-from jogo_V16 import main
+from Jogo_V16 import main
 from Tela_inicial import tela_inicial
 #from Tela_vitoria import victory
 #from gameover import gameover
