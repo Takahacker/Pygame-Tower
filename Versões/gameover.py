@@ -20,6 +20,8 @@ def gameover():
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    pygame.quit
+                    tela_inicial()
+                    main()
+                    
         gameover_screen.blit(gameover_background, (0, 0))
         pygame.display.flip()
