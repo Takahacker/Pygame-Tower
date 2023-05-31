@@ -37,3 +37,6 @@ Após descompactar a pasta dos arquivos do jogo é possível executá-lo rodando
 
 -------------- Vídeo Youtube -------------------
 
+https://youtu.be/D5bqAlvpKw4
+https://youtu.be/D5bqAlvpKw4
+https://youtu.be/D5bqAlvpKw4
