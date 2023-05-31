@@ -370,7 +370,7 @@ def main():
         frametime = (time.time()-starttime)*speed
         screen.blit(level_img,(0,0))
         mpos = pygame.mouse.get_pos()
-
+        print(time)
         if sender_lista: wave = sender_lista[0].update(frametime,wave)
 
         z0,z1 = [],[]
